@@ -1,0 +1,27 @@
+1. Choose Preset
+1a. Define CureTime and CureTemp
+
+
+Choose Preset
+Set CureTime variable
+Set Temp (Calculate temp boundaries)
+
+LOOP:
+
+Set CurrentTime = millis()
+
+If Start is true {
+Set CureTime = CureTime + millis()
+Set RELAY = 1
+Set Start false }
+
+If Time < CureTime && DM != true {
+// keep heater on
+**Run Heating Feedback Loop**
+}
+
+If Time < CureTime && DM = false {
+**Stop Heating Feedback Loop**
+// Calculate remaining time
+Set CureTime = CureTime - CurrentTime
+}
