@@ -1,7 +1,15 @@
+#include <Wire.h>
+#include "Adafruit_MCP9808.h"
+
 // Pin Assignments
 #define RELAY 4
-#define T1 16
-#define T2 33
+#define T1 16   // DM Transistor
+#define T2 33   // Heating Pad Transistor
+#define ME 12   // Motor Enable
+#define M1 26   // Motor Pin 1
+#define M2 27   // Motor Pin 2
+#define PWM_CHANNEL 0 // Channel for analog writing to motor
+#define MOTOR_SPEED 100 // PWM of 100/255 on motor enable pin.
 
 // ESP32 Board TFT I2C Interface Pinout
 #define TFT_CS        5
@@ -15,25 +23,52 @@
 #define ROT_B 35
 #define BUTT_PRESS 34
 
+// Number of days between reset to handle millis() overflow
+#define RESET_DAYS 25
+
+// Preset Memory Locations
+#define P1_TEMP 0
+#define P1_TIME 1
+#define P2_TEMP 2
+#define P2_TIME 3
+#define P3_TEMP 4
+#define P3_TIME 5
+#define P4_TEMP 6
+#define P4_TIME 7
+#define P5_TEMP 8
+#define P5_TIME 9
+#define EEPROM_SIZE 10
+
 // Global Variables
-bool cureTrigger;  // Has curing been initiated?
-bool cureState;   // Is curing in process?
-bool dmStatus;    // Dead Man Switch Status
-float cureTemp;   // in C
-unsigned long int cureTime;   // In ms
-long int cureProgress; // In ms
-float tempLower;
-float tempUpper;
-float currentTemp; // in C
-bool rising;
+bool cureTrigger = 0;  // Has curing been initiated?
+bool cureState = 0;   // Is curing in process?
+bool dmStatus = 0;    // Dead Man Switch Status
+bool rising = 0;
+bool pauseTrigger = 0; // Pauses curing
+bool pauseState = 0;
+bool resumeTrigger = 0; // resume after pausing
+bool cancelTrigger = 0; // Cancels curing
+
+float cureTemp = 0;   // in C
+unsigned long int cureTime = 0;   // In ms
+long int cureProgress = 0; // In ms
+float tempLower = 0;
+float tempUpper= 0;
+float currentTemp = 0; // in C
+
 
 int regResin[2] = {50, 30};
 int toughResin[2] = {60, 45};
-int highResin[2] = 
+int highResin[2] = {80, 60};
+int preset1Resin[2] = {};
+int preset2Resin[2] = {};
+int preset3Resin[2] = {};
+int preset4Resin[2] = {};
+int preset5Resin[2] = {};
 
-#include <Wire.h>
-#include "Adafruit_MCP9808.h"
+// Include Menu Code
 #include "Curing_Chamber_Variables.h"
+
 
 // Create the MCP9808 temperature sensor object
 Adafruit_MCP9808 tempsensor = Adafruit_MCP9808();
@@ -48,10 +83,38 @@ void setup() {
     while (1);
     }
 
+  // Initalize EEPROM and preset values
+  if (!EEPROM.begin(EEPROM_SIZE))
+{
+  Serial.println("failed to initialise EEPROM"); delay(1000000);
+}
+  preset1Resin[0] = EEPROM.read(P1_TEMP);
+  preset1Resin[1] = EEPROM.read(P1_TIME);
+  preset2Resin[0] = EEPROM.read(P2_TEMP);
+  preset2Resin[1] = EEPROM.read(P2_TIME);
+  preset3Resin[0] = EEPROM.read(P3_TEMP);
+  preset3Resin[1] = EEPROM.read(P3_TIME);
+  preset4Resin[0] = EEPROM.read(P4_TEMP);
+  preset4Resin[1] = EEPROM.read(P4_TIME);
+  preset5Resin[0] = EEPROM.read(P5_TEMP);
+  preset5Resin[1] = EEPROM.read(P5_TIME);
+
   // put your setup code here, to run once:
   pinMode(RELAY, OUTPUT);
   pinMode(T1, INPUT); // Reads status of DM switch
   pinMode(T2, OUTPUT); // Controls triggering of heating pad
+
+  //pinMode(ME, OUTPUT);
+  ledcSetup(PWM_CHANNEL, 5000, 8); // Create a PWM channel '0' with freq 5000Hz, and resolution of 8
+  ledcAttachPin(ME, PWM_CHANNEL);  // Attach motor enable to PWM channel.
+  pinMode(M1, OUTPUT);
+  pinMode(M2, OUTPUT);
+
+  digitalWrite(M1, 0);  // Enable Motor
+  digitalWrite(M2, 1);
+  ledcWrite(PWM_CHANNEL, 0);  // Initialize motor to be off
+
+  digitalWrite(RELAY, 0);   // Initialize RELAY to off mode
 
   pinMode(ROT_A, INPUT);
   pinMode(ROT_B, INPUT);
@@ -62,27 +125,30 @@ void setup() {
 
   startup_screen();
   intialize_menu();
-  display_menu(menu, option);
+  display_menu(menu, option, 0);
 
-// Initialize Variables
-  dmStatus = 0;
-  cureState = 0;
-  cureTemp = 0;
-  cureTime = 0;
-  rising = 0;
 }
 
 void loop() {
 
   currentTemp = tempsensor.readTempC();
   if ( (millis()%5000) < 1) {
-    Serial.println(currentTemp);
+    Serial.print("\nTemp: ");
+    Serial.print(currentTemp);
+    Serial.print(" C");
   }
 
   update_display();
 
+//DEBUG -- REMOVE WHEN NOT NEEDED
+if (!digitalRead(15)) {
+  cureTrigger = 1;
+}
+
 // Handles the initialization of the curing process
 if (cureTrigger == 1) {   // if curing has been triggered, set up the cure time and set curing state
+    Serial.println("Curing has started");
+    cureTime = cureTime * 1000;
     cureProgress = cureTime;
     cureTime += millis();
     tempLower = cureTemp - 5;
@@ -91,35 +157,83 @@ if (cureTrigger == 1) {   // if curing has been triggered, set up the cure time 
     rising = 1;
     cureState = 1;
     digitalWrite(RELAY, 1);
+    digitalWrite(M1, 1);
+    digitalWrite(M2, 0);
+    ledcWrite(PWM_CHANNEL, MOTOR_SPEED);
+    delay(10);
   }
 
 // Handles the whole curing process itself
 if (cureState) {
-  if (cureProgress < 0) {   // If the remaining cure time is less than 0
+
+  if (cureProgress <= 0) {   // If the remaining cure time is less than 0
+    Serial.println("Curing has completed.");
     digitalWrite(RELAY, 0);
+    ledcWrite(PWM_CHANNEL, 0);
     cureState = 0;
-  } else {
+  }
+
+  else {
+
+    if (pauseTrigger) {
+        pauseTrigger = 0;
+        pauseState = 1;
+        digitalWrite(RELAY, 0);
+    }
+
+    if (pauseState) {
+      cureTime = cureProgress + millis();
+    }
+
+    if (resumeTrigger) {
+      resumeTrigger = 0;
+      pauseState = 0;
+      digitalWrite(RELAY, 1);
+    }
+
+    if (cancelTrigger) {
+      cureProgress = 0;
+    }
 
     // Reads the deadman's switch
     dmStatus = digitalRead(T1);
 
     // Code to handle dead-man switch
-    if (dmStatus = 1) {      // If the door is open, keep adding the current clock time to the time remaining to save the time.
-      cureTime = cureProgress + millis();
+    if (dmStatus == 1) {      // If the door is open, keep adding the current clock time to the time remaining to save the time.
+      if ((millis() % 10000) < 1) {
+        Serial.println("Door is open. Close door to continue curing.");
+      }
+      pauseTrigger = 1; // Pauses job when door is open.
+      //cureTime = cureProgress + millis();
     } else {
+      if (pauseState) {  // If coming out of a pause state and door is closed.
+        resumeTrigger = 1; // resumes the print.
+      }
       cureProgress = cureTime - millis();   // If door is closed decrement cureProgress by how many millis have passed.
     }
 
+    // Code for Motor
+    ledcWrite(PWM_CHANNEL, MOTOR_SPEED);    // PWM duty cycle to control motor speed
+
     // Code to handle feedback switching on and off of the heating pad transistor
     if (currentTemp > tempUpper && rising) {
+      if ((millis() % 10000) < 1) {
+        Serial.println("Chamber is now cooling.");
+      }
       rising = 0;
       digitalWrite(T2, 0);
     } else if (currentTemp < tempLower && !rising) {
+      if ((millis() % 10000) < 1) {
+        Serial.println("Chamber is now heating.");
+      }
       rising = 1;
       digitalWrite(T2, 1);
     }
   }
 
+} else if ((millis() / (RESET_DAYS * 24 * 60 * 60 * 1000)) >= 1 ) {
+  ESP.restart();    // This block handles the reset every set number of days to avoid millis() overflow.
 }
+
 
 }
