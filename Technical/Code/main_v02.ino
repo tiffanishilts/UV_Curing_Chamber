@@ -1,7 +1,5 @@
-#include "Curing_Chamber_Variables.h"
-
-#include <Wire.h>
-#include "Adafruit_MCP9808.h"
+//#include <Wire.h>
+//#include "Adafruit_MCP9808.h"
 
 // Pin Assignments
 #define RELAY 4
@@ -62,6 +60,11 @@ float currentTemp = 0; // in C
 int regResin[2] = {50, 30};
 int toughResin[2] = {60, 45};
 int highResin[2] = {80, 60};
+int resin_0 [2] = {40, 40};
+int resin_1 [2] = {50, 50};
+int resin_2 [2] = {60, 60};
+int resin_3 [2] = {70, 70};
+int resin_4 [2] = {80, 80};
 int preset1Resin[2] = {};
 int preset2Resin[2] = {};
 int preset3Resin[2] = {};
@@ -71,20 +74,20 @@ int preset5Resin[2] = {};
 // Include Menu Code
 #include "Curing_Chamber_Variables.h"
 
-
+/*
 // Create the MCP9808 temperature sensor object
 Adafruit_MCP9808 tempsensor = Adafruit_MCP9808();
-
+*/
 void setup() {
 
   Serial.begin(9600);
-
+/*
   if (!tempsensor.begin())
     {
     Serial.println("Couldn't find MCP9808!");
     while (1);
     }
-
+*/
   // Initalize EEPROM and preset values
   if (!EEPROM.begin(EEPROM_SIZE))
 {
@@ -132,5 +135,110 @@ void setup() {
 }
 
 void loop() {
+/*
+  currentTemp = tempsensor.readTempC();
+  if ( (millis()%5000) < 1) {
+    Serial.print("\nTemp: ");
+    Serial.print(currentTemp);
+    Serial.print(" C");
+  }
+*/
   update_display();
+/*
+//DEBUG -- REMOVE WHEN NOT NEEDED
+if (!digitalRead(15)) {
+  cureTrigger = 1;
+}
+
+// Handles the initialization of the curing process
+if (cureTrigger == 1) {   // if curing has been triggered, set up the cure time and set curing state
+    Serial.println("Curing has started");
+    cureTime = cureTime * 1000;
+    cureProgress = cureTime;
+    cureTime += millis();
+    tempLower = cureTemp - 5;
+    tempUpper = cureTemp + 5;
+    cureTrigger = 0;
+    rising = 1;
+    cureState = 1;
+    digitalWrite(RELAY, 1);
+    digitalWrite(M1, 1);
+    digitalWrite(M2, 0);
+    ledcWrite(PWM_CHANNEL, MOTOR_SPEED);
+    delay(10);
+  }
+
+// Handles the whole curing process itself
+if (cureState) {
+
+  if (cureProgress <= 0) {   // If the remaining cure time is less than 0
+    Serial.println("Curing has completed.");
+    digitalWrite(RELAY, 0);
+    ledcWrite(PWM_CHANNEL, 0);
+    cureState = 0;
+  }
+
+  else {
+
+    if (pauseTrigger) {
+        pauseTrigger = 0;
+        pauseState = 1;
+        digitalWrite(RELAY, 0);
+    }
+
+    if (pauseState) {
+      cureTime = cureProgress + millis();
+    }
+
+    if (resumeTrigger) {
+      resumeTrigger = 0;
+      pauseState = 0;
+      digitalWrite(RELAY, 1);
+    }
+
+    if (cancelTrigger) {
+      cureProgress = 0;
+    }
+
+    // Reads the deadman's switch
+    dmStatus = digitalRead(T1);
+
+    // Code to handle dead-man switch
+    if (dmStatus == 1) {      // If the door is open, keep adding the current clock time to the time remaining to save the time.
+      if ((millis() % 10000) < 1) {
+        Serial.println("Door is open. Close door to continue curing.");
+      }
+      pauseTrigger = 1; // Pauses job when door is open.
+      //cureTime = cureProgress + millis();
+    } else {
+      if (pauseState) {  // If coming out of a pause state and door is closed.
+        resumeTrigger = 1; // resumes the print.
+      }
+      cureProgress = cureTime - millis();   // If door is closed decrement cureProgress by how many millis have passed.
+    }
+
+    // Code for Motor
+    ledcWrite(PWM_CHANNEL, MOTOR_SPEED);    // PWM duty cycle to control motor speed
+
+    // Code to handle feedback switching on and off of the heating pad transistor
+    if (currentTemp > tempUpper && rising) {
+      if ((millis() % 10000) < 1) {
+        Serial.println("Chamber is now cooling.");
+      }
+      rising = 0;
+      digitalWrite(T2, 0);
+    } else if (currentTemp < tempLower && !rising) {
+      if ((millis() % 10000) < 1) {
+        Serial.println("Chamber is now heating.");
+      }
+      rising = 1;
+      digitalWrite(T2, 1);
+    }
+  }
+
+} else if ((millis() / (RESET_DAYS * 24 * 60 * 60 * 1000)) >= 1 ) {
+  ESP.restart();    // This block handles the reset every set number of days to avoid millis() overflow.
+}
+
+*/
 }
