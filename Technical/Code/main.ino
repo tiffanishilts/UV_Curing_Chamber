@@ -24,9 +24,11 @@
 #define RELAY 4
 #define T1 16   // DM Transistor
 #define T2 33   // Heating Pad Transistor
-#define ME 12   // Motor Enable
+#define ME 12   // Motor Enable for both
 #define M1 26   // Motor Pin 1
 #define M2 27   // Motor Pin 2
+#define M3 13   // Motor Pin 3
+#define M4 14   // Motor Pin 4
 #define PWM_CHANNEL 0 // Channel for analog writing to motor
 #define MOTOR_SPEED 50 // PWM of 100/255 on motor enable pin.
 
@@ -151,9 +153,14 @@ void setup() {
   ledcAttachPin(ME, PWM_CHANNEL);  // Attach motor enable to PWM channel.
   pinMode(M1, OUTPUT);
   pinMode(M2, OUTPUT);
+  pinMode(M3, OUTPUT);
+  pinMode(M4, OUTPUT);
 
-  digitalWrite(M1, 0);  // Enable Motor
-  digitalWrite(M2, 1);
+// Initialize Motor Off
+  digitalWrite(motorPin4, LOW);
+  digitalWrite(motorPin3, LOW);
+  digitalWrite(motorPin2, LOW);
+  digitalWrite(motorPin1, LOW);
   ledcWrite(PWM_CHANNEL, 0);  // Initialize motor to be off
 
   digitalWrite(RELAY, 0);   // Initialize RELAY to off mode
@@ -181,6 +188,9 @@ void loop() {
 
   // Updates the display based on menu structures and inputs
   update_display();
+
+  // Runs the stepper phases
+  stepperRun();
 
   // Initializes the curing process when the cure trigger is set
   if (cureTrigger)
@@ -228,8 +238,8 @@ void initializeCure () {
     rising = 0;   // FIXME: Test to see if value 0 works
     cureState = 1;
     digitalWrite(RELAY, 1);
-    digitalWrite(M1, 1);
-    digitalWrite(M2, 0);
+//    digitalWrite(M1, 1);
+//    digitalWrite(M2, 0);
     ledcWrite(PWM_CHANNEL, MOTOR_SPEED);
     delay(10);
 }
@@ -335,4 +345,29 @@ void cureProcedure() {
         digitalWrite(T2, 1);
       }
     }
+}
+
+void stepperRun() {
+motorTimer = millis();
+  digitalWrite(motorPin4, HIGH);
+  digitalWrite(motorPin3, LOW);
+  digitalWrite(motorPin2, LOW);
+  digitalWrite(motorPin1, LOW);
+if (millis() % (motorTimer + 50) < 1) {
+  digitalWrite(motorPin4, LOW);
+  digitalWrite(motorPin3, HIGH);
+  digitalWrite(motorPin2, LOW);
+  digitalWrite(motorPin1, LOW);
+}
+if (millis() % (motorTimer + 50) < 1) {
+  digitalWrite(motorPin4, LOW);
+  digitalWrite(motorPin3, LOW);
+  digitalWrite(motorPin2, HIGH);
+  digitalWrite(motorPin1, LOW);
+}
+if (millis() % (motorTimer + 50) < 1) {
+  digitalWrite(motorPin4, LOW);
+  digitalWrite(motorPin3, LOW);
+  digitalWrite(motorPin2, LOW);
+  digitalWrite(motorPin1, HIGH);
 }
