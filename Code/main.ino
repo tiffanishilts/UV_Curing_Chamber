@@ -347,6 +347,8 @@ void cureProcedure() {
     }
 }
 
+// FIXME: Prototype Stepper Code (NOT TESTED)
+
 void stepperRun() {
 motorTimer = millis();
   digitalWrite(motorPin4, HIGH);
