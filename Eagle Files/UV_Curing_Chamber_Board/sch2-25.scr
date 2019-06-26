@@ -1,0 +1,152 @@
+# NetScript
+# 
+# Exported from CuringCircuit.sch at 2/25/19 8:20 AM
+# 
+# EAGLE Version 9.3.0 Copyright (c) 1988-2019 Autodesk, Inc.
+# 
+Change Class 1;
+Signal '12V'      'C2'       '+' \
+                  'IC1'      '1' \
+                  'POWER_SWITCH' '2' \
+                  'RELAY-B'  '2' \
+                  ;
+Change Class 1;
+Signal 'GND'      '12V_BARREL' '1' \
+                  'C1'       '2' \
+                  'C2'       '-' \
+                  'C3'       '-' \
+                  'FAN'      '1' \
+                  'IC1'      '2' \
+                  'IC2'      '10' \
+                  'IC2'      '12' \
+                  'IC2'      '13' \
+                  'IC2'      '15' \
+                  'IC2'      '4' \
+                  'IC2'      '5' \
+                  'IC2'      '9' \
+                  'LIGHTS'   '1' \
+                  'MCP9808'  '2' \
+                  'R1'       '1' \
+                  'RELAY-A'  '3' \
+                  'ROTARY_ENC' '1' \
+                  'T1'       '3' \
+                  'T2'       '3' \
+                  'TFT_SCREEN' '1' \
+                  'TFT_SCREEN' '16' \
+                  'U$1'      '32' \
+                  'U$1'      '38' \
+                  ;
+Change Class 0;
+Signal 'N$1'      'C1'       '1' \
+                  'C3'       '+' \
+                  'IC1'      '3' \
+                  'IC2'      '16' \
+                  'R3'       '2' \
+                  'U$1'      '19' \
+                  ;
+Change Class 0;
+Signal 'N$2'      'IC2'      '1' \
+                  'U$1'      '13' \
+                  ;
+Change Class 1;
+Signal 'N$3'      '12V_BARREL' '3' \
+                  'POWER_SWITCH' '1' \
+                  ;
+Change Class 0;
+Signal 'N$4'      'HEATER'   '1' \
+                  'T2'       '2' \
+                  ;
+Change Class 0;
+Signal 'N$5'      'R1'       '2' \
+                  'T2'       '1' \
+                  'U$1'      '8' \
+                  ;
+Change Class 0;
+Signal 'N$7'      'DM_SWITCH' '1' \
+                  'MCP9808'  '1' \
+                  'R2'       '2' \
+                  'ROTARY_ENC' '2' \
+                  'TFT_SCREEN' '15' \
+                  'U$1'      '1' \
+                  ;
+Change Class 0;
+Signal 'N$8'      'DM_SWITCH' '2' \
+                  'RELAY-A'  '1' \
+                  'T1'       '1' \
+                  ;
+Change Class 0;
+Signal 'N$9'      'R2'       '1' \
+                  'T1'       '2' \
+                  'U$1'      '27' \
+                  ;
+Change Class 0;
+Signal 'N$10'     'MCP9808'  '3' \
+                  'U$1'      '36' \
+                  ;
+Change Class 0;
+Signal 'N$11'     'MCP9808'  '4' \
+                  'U$1'      '33' \
+                  ;
+Change Class 0;
+Signal 'N$12'     'IC2'      '2' \
+                  'U$1'      '10' \
+                  ;
+Change Class 0;
+Signal 'N$13'     'IC2'      '7' \
+                  'U$1'      '11' \
+                  ;
+Change Class 0;
+Signal 'N$14'     'IC2'      '3' \
+                  'MOTOR'    '2' \
+                  ;
+Change Class 0;
+Signal 'N$15'     'IC2'      '6' \
+                  'MOTOR'    '1' \
+                  ;
+Change Class 0;
+Signal 'N$16'     'RELAY-A'  '2' \
+                  'U$1'      '26' \
+                  ;
+Change Class 0;
+Signal 'N$17'     'R3'       '1' \
+                  'TFT_SCREEN' '2' \
+                  ;
+Change Class 0;
+Signal 'N$18'     'ROTARY_ENC' '3' \
+                  'U$1'      '5' \
+                  ;
+Change Class 0;
+Signal 'N$19'     'ROTARY_ENC' '4' \
+                  'U$1'      '7' \
+                  ;
+Change Class 0;
+Signal 'N$20'     'ROTARY_ENC' '5' \
+                  'U$1'      '6' \
+                  ;
+Change Class 0;
+Signal 'N$21'     'TFT_SCREEN' '11' \
+                  'U$1'      '28' \
+                  ;
+Change Class 0;
+Signal 'N$22'     'TFT_SCREEN' '10' \
+                  'U$1'      '31' \
+                  ;
+Change Class 0;
+Signal 'N$23'     'TFT_SCREEN' '9' \
+                  'U$1'      '37' \
+                  ;
+Change Class 0;
+Signal 'N$24'     'TFT_SCREEN' '8' \
+                  'U$1'      '30' \
+                  ;
+Change Class 0;
+Signal 'N$25'     'TFT_SCREEN' '7' \
+                  'U$1'      '29' \
+                  ;
+Change Class 1;
+Signal 'RELAY_NO' 'FAN'      '2' \
+                  'HEATER'   '2' \
+                  'IC2'      '8' \
+                  'LIGHTS'   '3' \
+                  'RELAY-B'  '1' \
+                  ;
