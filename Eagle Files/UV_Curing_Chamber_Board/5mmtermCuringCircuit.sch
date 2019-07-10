@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.1">
+<eagle version="9.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -21776,6 +21776,112 @@ http://www.st.com&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="con-lstb" urn="urn:adsk.eagle:library:162">
+<description>&lt;b&gt;Pin Headers&lt;/b&gt;&lt;p&gt;
+Naming:&lt;p&gt;
+MA = male&lt;p&gt;
+# contacts - # rows&lt;p&gt;
+W = angled&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="MA04-1" urn="urn:adsk.eagle:footprint:8285/1" library_version="1">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.27" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-5.08" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-6.223" y="-0.635" size="1.27" layer="21" ratio="10">1</text>
+<text x="0.635" y="1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="5.334" y="-0.635" size="1.27" layer="21" ratio="10">4</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="MA04-1" urn="urn:adsk.eagle:package:8337/1" type="box" library_version="1">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="MA04-1"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="MA04-1" urn="urn:adsk.eagle:symbol:8284/1" library_version="1">
+<wire x1="3.81" y1="-7.62" x2="-1.27" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="-1.27" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-7.62" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
+<text x="-1.27" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-1.27" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MA04-1" urn="urn:adsk.eagle:component:8375/1" prefix="SV" uservalue="yes" library_version="1">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="MA04-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MA04-1">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+<connect gate="1" pin="3" pad="3"/>
+<connect gate="1" pin="4" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8337/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -21828,7 +21934,6 @@ http://www.st.com&lt;p&gt;
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="MOTOR_A" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="5MM" package3d_urn="urn:adsk.eagle:package:38044/1"/>
 <part name="ROTARY_ENC" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_05" device="" package3d_urn="urn:adsk.eagle:package:38104/1"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="TFT_SCREEN" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_16" device="" package3d_urn="urn:adsk.eagle:package:38258/1"/>
@@ -21839,9 +21944,9 @@ http://www.st.com&lt;p&gt;
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220"/>
 <part name="RELAY_B" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="5MM" package3d_urn="urn:adsk.eagle:package:38044/1"/>
-<part name="MOTOR_B" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="5MM" package3d_urn="urn:adsk.eagle:package:38044/1"/>
 <part name="IC2" library="st-microelectronics" library_urn="urn:adsk.eagle:library:368" deviceset="L293D" device="" package3d_urn="urn:adsk.eagle:package:26820/1"/>
 <part name="U$1" library="ESP32-DEVKITC" deviceset="ESP32DEVKITC" device=""/>
+<part name="MOTOR_BREAKOUT" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -21942,15 +22047,11 @@ Portland State University</text>
 <instance part="GND6" gate="1" x="287.02" y="66.04" smashed="yes">
 <attribute name="VALUE" x="284.48" y="63.5" size="1.778" layer="96"/>
 </instance>
-<instance part="GND7" gate="1" x="218.44" y="5.08" smashed="yes">
-<attribute name="VALUE" x="215.9" y="2.54" size="1.778" layer="96"/>
+<instance part="GND7" gate="1" x="226.06" y="5.08" smashed="yes">
+<attribute name="VALUE" x="223.52" y="2.54" size="1.778" layer="96"/>
 </instance>
-<instance part="GND10" gate="1" x="269.24" y="5.08" smashed="yes">
-<attribute name="VALUE" x="266.7" y="2.54" size="1.778" layer="96"/>
-</instance>
-<instance part="MOTOR_A" gate="G$1" x="200.66" y="35.56" smashed="yes">
-<attribute name="VALUE" x="198.12" y="30.734" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="198.12" y="41.148" size="1.778" layer="95" font="vector"/>
+<instance part="GND10" gate="1" x="261.62" y="5.08" smashed="yes">
+<attribute name="VALUE" x="259.08" y="2.54" size="1.778" layer="96"/>
 </instance>
 <instance part="ROTARY_ENC" gate="G$1" x="160.02" y="106.68" smashed="yes">
 <attribute name="VALUE" x="157.48" y="96.774" size="1.778" layer="96" font="vector"/>
@@ -21970,8 +22071,8 @@ Portland State University</text>
 <instance part="GND12" gate="1" x="355.6" y="63.5" smashed="yes">
 <attribute name="VALUE" x="353.06" y="60.96" size="1.778" layer="96"/>
 </instance>
-<instance part="GND13" gate="1" x="223.52" y="63.5" smashed="yes">
-<attribute name="VALUE" x="220.98" y="60.96" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="223.52" y="68.58" smashed="yes">
+<attribute name="VALUE" x="220.98" y="66.04" size="1.778" layer="96"/>
 </instance>
 <instance part="SPEAKER" gate="G$1" x="185.42" y="96.52" smashed="yes">
 <attribute name="VALUE" x="182.88" y="91.694" size="1.778" layer="96" font="vector"/>
@@ -21988,16 +22089,16 @@ Portland State University</text>
 <attribute name="VALUE" x="147.32" y="28.194" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="147.32" y="38.608" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="MOTOR_B" gate="G$1" x="292.1" y="38.1" smashed="yes" rot="R180">
-<attribute name="VALUE" x="294.64" y="42.926" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="294.64" y="32.512" size="1.778" layer="95" font="vector" rot="R180"/>
-</instance>
 <instance part="IC2" gate="G$1" x="243.84" y="35.56" smashed="yes">
 <attribute name="NAME" x="233.68" y="56.896" size="1.778" layer="95"/>
 <attribute name="VALUE" x="233.68" y="12.7" size="1.778" layer="96"/>
 </instance>
 <instance part="U$1" gate="G$1" x="243.84" y="96.52" smashed="yes" rot="R270">
 <attribute name="NAME" x="248.92" y="123.19" size="1.27" layer="95"/>
+</instance>
+<instance part="MOTOR_BREAKOUT" gate="1" x="314.96" y="50.8" smashed="yes" rot="R270">
+<attribute name="VALUE" x="304.8" y="52.07" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="320.802" y="52.07" size="1.778" layer="95" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -22074,22 +22175,22 @@ Portland State University</text>
 <pinref part="U$1" gate="G$1" pin="GND@38"/>
 </segment>
 <segment>
-<wire x1="228.6" y1="38.1" x2="218.44" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="38.1" x2="226.06" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="218.44" y1="38.1" x2="218.44" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="33.02" x2="218.44" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="33.02" x2="218.44" y2="33.02" width="0.1524" layer="91"/>
-<junction x="218.44" y="33.02"/>
+<wire x1="226.06" y1="38.1" x2="226.06" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="33.02" x2="226.06" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="33.02" x2="226.06" y2="33.02" width="0.1524" layer="91"/>
+<junction x="226.06" y="33.02"/>
 <pinref part="IC2" gate="G$1" pin="GND1"/>
 <pinref part="IC2" gate="G$1" pin="GND2"/>
 </segment>
 <segment>
-<wire x1="259.08" y1="38.1" x2="269.24" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="38.1" x2="261.62" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="269.24" y1="38.1" x2="269.24" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="33.02" x2="269.24" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="33.02" x2="269.24" y2="33.02" width="0.1524" layer="91"/>
-<junction x="269.24" y="33.02"/>
+<wire x1="261.62" y1="38.1" x2="261.62" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="33.02" x2="261.62" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="33.02" x2="261.62" y2="33.02" width="0.1524" layer="91"/>
+<junction x="261.62" y="33.02"/>
 <pinref part="IC2" gate="G$1" pin="GND3"/>
 <pinref part="IC2" gate="G$1" pin="GND4"/>
 </segment>
@@ -22112,7 +22213,7 @@ Portland State University</text>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="226.06" y1="86.36" x2="223.52" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="86.36" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="86.36" x2="223.52" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GND@14"/>
 </segment>
 <segment>
@@ -22277,10 +22378,12 @@ Portland State University</text>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="MOTOR_A" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="38.1" x2="208.28" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="43.18" x2="228.6" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="1Y"/>
+<wire x1="208.28" y1="43.18" x2="208.28" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="MOTOR_BREAKOUT" gate="1" pin="4"/>
+<wire x1="208.28" y1="-2.54" x2="317.5" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="-2.54" x2="317.5" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -22293,10 +22396,12 @@ Portland State University</text>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="MOTOR_A" gate="G$1" pin="1"/>
-<wire x1="208.28" y1="35.56" x2="208.28" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="27.94" x2="228.6" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="27.94" x2="228.6" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="2Y"/>
+<wire x1="213.36" y1="27.94" x2="210.82" y2="0" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="0" x2="314.96" y2="0" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="0" x2="314.96" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="MOTOR_BREAKOUT" gate="1" pin="3"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -22435,20 +22540,17 @@ Portland State University</text>
 </net>
 <net name="N$27" class="0">
 <segment>
-<wire x1="259.08" y1="43.18" x2="279.4" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="MOTOR_B" gate="G$1" pin="1"/>
-<wire x1="279.4" y1="43.18" x2="279.4" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="38.1" x2="284.48" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="43.18" x2="309.88" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="4Y"/>
+<pinref part="MOTOR_BREAKOUT" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<wire x1="259.08" y1="27.94" x2="279.4" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="27.94" x2="279.4" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="MOTOR_B" gate="G$1" pin="2"/>
-<wire x1="279.4" y1="35.56" x2="284.48" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="27.94" x2="312.42" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="27.94" x2="312.42" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="3Y"/>
+<pinref part="MOTOR_BREAKOUT" gate="1" pin="2"/>
 </segment>
 </net>
 <net name="N$29" class="0">
