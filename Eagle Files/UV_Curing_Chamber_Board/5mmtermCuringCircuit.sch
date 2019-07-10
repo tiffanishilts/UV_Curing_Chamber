@@ -21954,6 +21954,11 @@ W = angled&lt;p&gt;
 <text x="127" y="111.76" size="1.778" layer="91">UV Curing Chamber
 ECE 212 - Winter 2019
 Portland State University</text>
+<wire x1="330.2" y1="63.5" x2="330.2" y2="-22.86" width="0.508" layer="97"/>
+<wire x1="330.2" y1="-22.86" x2="213.36" y2="-22.86" width="0.6096" layer="97"/>
+<wire x1="213.36" y1="-22.86" x2="213.36" y2="63.5" width="0.508" layer="97"/>
+<wire x1="213.36" y1="63.5" x2="330.2" y2="63.5" width="0.508" layer="97"/>
+<text x="215.9" y="-20.32" size="6.4516" layer="97">Stepper Control</text>
 </plain>
 <instances>
 <instance part="12V_BARREL" gate="G$1" x="114.3" y="71.12" smashed="yes">
@@ -22047,11 +22052,11 @@ Portland State University</text>
 <instance part="GND6" gate="1" x="287.02" y="66.04" smashed="yes">
 <attribute name="VALUE" x="284.48" y="63.5" size="1.778" layer="96"/>
 </instance>
-<instance part="GND7" gate="1" x="226.06" y="5.08" smashed="yes">
-<attribute name="VALUE" x="223.52" y="2.54" size="1.778" layer="96"/>
+<instance part="GND7" gate="1" x="248.92" y="5.08" smashed="yes">
+<attribute name="VALUE" x="246.38" y="2.54" size="1.778" layer="96"/>
 </instance>
-<instance part="GND10" gate="1" x="261.62" y="5.08" smashed="yes">
-<attribute name="VALUE" x="259.08" y="2.54" size="1.778" layer="96"/>
+<instance part="GND10" gate="1" x="284.48" y="5.08" smashed="yes">
+<attribute name="VALUE" x="281.94" y="2.54" size="1.778" layer="96"/>
 </instance>
 <instance part="ROTARY_ENC" gate="G$1" x="160.02" y="106.68" smashed="yes">
 <attribute name="VALUE" x="157.48" y="96.774" size="1.778" layer="96" font="vector"/>
@@ -22089,9 +22094,9 @@ Portland State University</text>
 <attribute name="VALUE" x="147.32" y="28.194" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="147.32" y="38.608" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="IC2" gate="G$1" x="243.84" y="35.56" smashed="yes">
-<attribute name="NAME" x="233.68" y="56.896" size="1.778" layer="95"/>
-<attribute name="VALUE" x="233.68" y="12.7" size="1.778" layer="96"/>
+<instance part="IC2" gate="G$1" x="266.7" y="35.56" smashed="yes">
+<attribute name="NAME" x="256.54" y="56.896" size="1.778" layer="95"/>
+<attribute name="VALUE" x="256.54" y="12.7" size="1.778" layer="96"/>
 </instance>
 <instance part="U$1" gate="G$1" x="243.84" y="96.52" smashed="yes" rot="R270">
 <attribute name="NAME" x="248.92" y="123.19" size="1.27" layer="95"/>
@@ -22175,22 +22180,22 @@ Portland State University</text>
 <pinref part="U$1" gate="G$1" pin="GND@38"/>
 </segment>
 <segment>
-<wire x1="228.6" y1="38.1" x2="226.06" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="38.1" x2="248.92" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="226.06" y1="38.1" x2="226.06" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="33.02" x2="226.06" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="33.02" x2="226.06" y2="33.02" width="0.1524" layer="91"/>
-<junction x="226.06" y="33.02"/>
+<wire x1="248.92" y1="38.1" x2="248.92" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="33.02" x2="248.92" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="33.02" x2="248.92" y2="33.02" width="0.1524" layer="91"/>
+<junction x="248.92" y="33.02"/>
 <pinref part="IC2" gate="G$1" pin="GND1"/>
 <pinref part="IC2" gate="G$1" pin="GND2"/>
 </segment>
 <segment>
-<wire x1="259.08" y1="38.1" x2="261.62" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="38.1" x2="284.48" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="261.62" y1="38.1" x2="261.62" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="33.02" x2="261.62" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="33.02" x2="261.62" y2="33.02" width="0.1524" layer="91"/>
-<junction x="261.62" y="33.02"/>
+<wire x1="284.48" y1="38.1" x2="284.48" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="33.02" x2="284.48" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="33.02" x2="284.48" y2="33.02" width="0.1524" layer="91"/>
+<junction x="284.48" y="33.02"/>
 <pinref part="IC2" gate="G$1" pin="GND3"/>
 <pinref part="IC2" gate="G$1" pin="GND4"/>
 </segment>
@@ -22225,9 +22230,9 @@ Portland State University</text>
 </net>
 <net name="N$1" class="0">
 <segment>
-<wire x1="213.36" y1="60.96" x2="261.62" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="60.96" x2="261.62" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="53.34" x2="259.08" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="60.96" x2="284.48" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="60.96" x2="284.48" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="53.34" x2="281.94" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="+"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="73.66" x2="205.74" y2="60.96" width="0.1524" layer="91"/>
@@ -22239,13 +22244,13 @@ Portland State University</text>
 <wire x1="193.04" y1="73.66" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
 <junction x="193.04" y="73.66"/>
 <wire x1="193.04" y1="73.66" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="60.96" x2="213.36" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="60.96" x2="213.36" y2="73.66" width="0.1524" layer="91"/>
 <junction x="213.36" y="73.66"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="332.74" y1="109.22" x2="335.28" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="332.74" y1="60.96" x2="332.74" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="60.96" x2="332.74" y2="60.96" width="0.1524" layer="91"/>
-<junction x="261.62" y="60.96"/>
+<wire x1="284.48" y1="60.96" x2="332.74" y2="60.96" width="0.1524" layer="91"/>
+<junction x="284.48" y="60.96"/>
 <pinref part="IC2" gate="G$1" pin="VCC1"/>
 <pinref part="U$1" gate="G$1" pin="5V"/>
 </segment>
@@ -22360,8 +22365,8 @@ Portland State University</text>
 </net>
 <net name="N$12" class="0">
 <segment>
-<wire x1="228.6" y1="48.26" x2="215.9" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="48.26" x2="215.9" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="48.26" x2="238.76" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="48.26" x2="215.9" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="96.52" x2="226.06" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="1A"/>
 <pinref part="U$1" gate="G$1" pin="IO26"/>
@@ -22369,8 +22374,8 @@ Portland State University</text>
 </net>
 <net name="N$13" class="0">
 <segment>
-<wire x1="228.6" y1="22.86" x2="220.98" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="22.86" x2="220.98" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="22.86" x2="243.84" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="22.86" x2="220.98" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="93.98" x2="226.06" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="2A"/>
 <pinref part="U$1" gate="G$1" pin="IO27"/>
@@ -22378,9 +22383,9 @@ Portland State University</text>
 </net>
 <net name="N$14" class="0">
 <segment>
-<wire x1="208.28" y1="43.18" x2="228.6" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="43.18" x2="251.46" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="1Y"/>
-<wire x1="208.28" y1="43.18" x2="208.28" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="43.18" x2="208.28" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="MOTOR_BREAKOUT" gate="1" pin="4"/>
 <wire x1="208.28" y1="-2.54" x2="317.5" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="-2.54" x2="317.5" y2="43.18" width="0.1524" layer="91"/>
@@ -22392,16 +22397,6 @@ Portland State University</text>
 <wire x1="297.18" y1="144.78" x2="297.18" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="88.9" x2="261.62" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="IO4"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<wire x1="213.36" y1="27.94" x2="228.6" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="2Y"/>
-<wire x1="213.36" y1="27.94" x2="210.82" y2="0" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="0" x2="314.96" y2="0" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="0" x2="314.96" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="MOTOR_BREAKOUT" gate="1" pin="3"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -22488,7 +22483,7 @@ Portland State University</text>
 <net name="RELAY_NO" class="1">
 <segment>
 <wire x1="157.48" y1="33.02" x2="162.56" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="17.78" x2="177.8" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="17.78" x2="177.8" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="17.78" x2="177.8" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="33.02" x2="162.56" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="HEATER" gate="G$1" pin="2"/>
@@ -22510,15 +22505,15 @@ Portland State University</text>
 </net>
 <net name="N$2" class="0">
 <segment>
-<wire x1="228.6" y1="53.34" x2="226.06" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="53.34" x2="218.44" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="53.34" x2="218.44" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="53.34" x2="248.92" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="53.34" x2="241.3" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="53.34" x2="218.44" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="88.9" x2="226.06" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="53.34" x2="226.06" y2="58.42" width="0.1524" layer="91"/>
-<junction x="226.06" y="53.34"/>
-<wire x1="226.06" y1="58.42" x2="271.78" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="58.42" x2="271.78" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="17.78" x2="259.08" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="53.34" x2="248.92" y2="58.42" width="0.1524" layer="91"/>
+<junction x="248.92" y="53.34"/>
+<wire x1="248.92" y1="58.42" x2="294.64" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="58.42" x2="294.64" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="17.78" x2="281.94" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="1-2EN"/>
 <pinref part="IC2" gate="G$1" pin="3-4EN"/>
 <pinref part="U$1" gate="G$1" pin="IO12"/>
@@ -22540,14 +22535,14 @@ Portland State University</text>
 </net>
 <net name="N$27" class="0">
 <segment>
-<wire x1="259.08" y1="43.18" x2="309.88" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="43.18" x2="309.88" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="4Y"/>
 <pinref part="MOTOR_BREAKOUT" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<wire x1="259.08" y1="27.94" x2="312.42" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="27.94" x2="312.42" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="27.94" x2="312.42" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="3Y"/>
 <pinref part="MOTOR_BREAKOUT" gate="1" pin="2"/>
@@ -22555,11 +22550,11 @@ Portland State University</text>
 </net>
 <net name="N$29" class="0">
 <segment>
-<wire x1="259.08" y1="48.26" x2="264.16" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="48.26" x2="287.02" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="83.82" x2="208.28" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="83.82" x2="208.28" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="63.5" x2="264.16" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="63.5" x2="264.16" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="63.5" x2="287.02" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="4A"/>
 <pinref part="U$1" gate="G$1" pin="IO13"/>
 </segment>
@@ -22569,10 +22564,20 @@ Portland State University</text>
 <wire x1="226.06" y1="91.44" x2="203.2" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="91.44" x2="203.2" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="66.04" x2="266.7" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="66.04" x2="266.7" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="22.86" x2="259.08" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="66.04" x2="289.56" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="22.86" x2="281.94" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="3A"/>
 <pinref part="U$1" gate="G$1" pin="IO14"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<wire x1="238.76" y1="27.94" x2="251.46" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="2Y"/>
+<wire x1="215.9" y1="0" x2="314.96" y2="0" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="0" x2="314.96" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="MOTOR_BREAKOUT" gate="1" pin="3"/>
+<wire x1="238.76" y1="27.94" x2="215.9" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
