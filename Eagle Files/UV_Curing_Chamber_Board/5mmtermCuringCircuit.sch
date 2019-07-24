@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.1">
+<eagle version="9.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16707,7 +16707,7 @@ TS-003</description>
 <packageinstance name="TO252"/>
 </packageinstances>
 </package3d>
-<package3d name="TO220V" urn="urn:adsk.eagle:package:16417/2" type="model" library_version="4">
+<package3d name="TO220V" urn="urn:adsk.eagle:package:16417/1" type="box" library_version="3">
 <description>TO 200 vertical</description>
 <packageinstances>
 <packageinstance name="TO220V"/>
@@ -16729,7 +16729,7 @@ TS-003</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="78*" urn="urn:adsk.eagle:component:16686/4" prefix="IC" library_version="4">
+<deviceset name="78*" urn="urn:adsk.eagle:component:16686/3" prefix="IC" library_version="3">
 <description>Positive &lt;b&gt;VOLTAGE REGULATOR&lt;/b&gt;&lt;p&gt;
 Source:&lt;br&gt;
 http://cache.national.com/ds/LM/LM78L05.pdf&lt;br&gt;
@@ -16839,7 +16839,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <connect gate="A1" pin="VO" pad="3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:16417/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16417/1"/>
 </package3dinstances>
 <technologies>
 <technology name="05"/>
@@ -21998,9 +21998,7 @@ W = angled&lt;p&gt;
 <part name="T2" library="RFP30N06LE" deviceset="RFP30N06LE" device=""/>
 <part name="T1" library="RFP30N06LE" deviceset="RFP30N06LE" device=""/>
 <part name="MCP9808" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X8" device="BIG" package3d_urn="urn:adsk.eagle:package:6240707/1"/>
-<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -22063,11 +22061,11 @@ Portland State University</text>
 <wire x1="210.82" y1="43.18" x2="210.82" y2="127" width="0.508" layer="97"/>
 <wire x1="210.82" y1="127" x2="327.66" y2="127" width="0.508" layer="97"/>
 <text x="215.9" y="35.56" size="6.4516" layer="97">Stepper Control</text>
-<wire x1="45.72" y1="170.18" x2="45.72" y2="121.92" width="0.508" layer="97"/>
-<wire x1="45.72" y1="121.92" x2="121.92" y2="121.92" width="0.508" layer="97"/>
-<wire x1="121.92" y1="121.92" x2="121.92" y2="170.18" width="0.508" layer="97"/>
+<wire x1="45.72" y1="170.18" x2="45.72" y2="132.08" width="0.508" layer="97"/>
+<wire x1="45.72" y1="132.08" x2="121.92" y2="132.08" width="0.508" layer="97"/>
+<wire x1="121.92" y1="132.08" x2="121.92" y2="170.18" width="0.508" layer="97"/>
 <wire x1="121.92" y1="170.18" x2="45.72" y2="170.18" width="0.508" layer="97"/>
-<text x="48.26" y="124.46" size="6.4516" layer="97">Power</text>
+<text x="48.26" y="121.92" size="6.4516" layer="97">Power</text>
 </plain>
 <instances>
 <instance part="12V_BARREL" gate="G$1" x="58.42" y="154.94" smashed="yes">
@@ -22102,20 +22100,14 @@ Portland State University</text>
 <attribute name="NAME" x="353.695" y="207.01" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="327.66" y="207.01" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND1" gate="1" x="88.9" y="139.7" smashed="yes">
-<attribute name="VALUE" x="86.36" y="137.16" size="1.778" layer="96"/>
-</instance>
 <instance part="GND2" gate="1" x="101.6" y="139.7" smashed="yes">
 <attribute name="VALUE" x="99.06" y="137.16" size="1.778" layer="96"/>
-</instance>
-<instance part="GND3" gate="1" x="114.3" y="139.7" smashed="yes">
-<attribute name="VALUE" x="111.76" y="137.16" size="1.778" layer="96"/>
 </instance>
 <instance part="GND8" gate="1" x="68.58" y="147.32" smashed="yes">
 <attribute name="VALUE" x="66.04" y="144.78" size="1.778" layer="96"/>
 </instance>
-<instance part="GND9" gate="1" x="215.9" y="203.2" smashed="yes">
-<attribute name="VALUE" x="213.36" y="200.66" size="1.778" layer="96"/>
+<instance part="GND9" gate="1" x="215.9" y="200.66" smashed="yes">
+<attribute name="VALUE" x="213.36" y="198.12" size="1.778" layer="96"/>
 </instance>
 <instance part="GND16" gate="1" x="167.64" y="35.56" smashed="yes">
 <attribute name="VALUE" x="165.1" y="33.02" size="1.778" layer="96"/>
@@ -22235,8 +22227,8 @@ Portland State University</text>
 <instance part="GND15" gate="1" x="353.06" y="226.06" smashed="yes">
 <attribute name="VALUE" x="350.52" y="223.52" size="1.778" layer="96"/>
 </instance>
-<instance part="+3V1" gate="G$1" x="160.02" y="175.26" smashed="yes">
-<attribute name="VALUE" x="157.48" y="170.18" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V1" gate="G$1" x="160.02" y="177.8" smashed="yes">
+<attribute name="VALUE" x="163.83" y="172.72" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND17" gate="1" x="403.86" y="137.16" smashed="yes">
 <attribute name="VALUE" x="401.32" y="134.62" size="1.778" layer="96"/>
@@ -22247,8 +22239,8 @@ Portland State University</text>
 <instance part="+3V3" gate="G$1" x="261.62" y="220.98" smashed="yes">
 <attribute name="VALUE" x="259.08" y="215.9" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V4" gate="G$1" x="355.6" y="152.4" smashed="yes">
-<attribute name="VALUE" x="353.06" y="147.32" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V4" gate="G$1" x="355.6" y="154.94" smashed="yes">
+<attribute name="VALUE" x="353.06" y="149.86" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="+3V5" gate="G$1" x="350.52" y="215.9" smashed="yes">
 <attribute name="VALUE" x="347.98" y="210.82" size="1.778" layer="96" rot="R90"/>
@@ -22290,30 +22282,22 @@ Portland State University</text>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="C2" gate="G$1" pin="-"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="88.9" y1="147.32" x2="88.9" y2="142.24" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="IC1" gate="A1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="101.6" y1="149.86" x2="101.6" y2="142.24" width="0.1524" layer="91"/>
-</segment>
-<segment>
+<pinref part="C2" gate="G$1" pin="-"/>
+<wire x1="88.9" y1="147.32" x2="88.9" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="142.24" x2="88.9" y2="142.24" width="0.1524" layer="91"/>
+<junction x="101.6" y="142.24"/>
 <pinref part="C3" gate="G$1" pin="-"/>
-<pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="114.3" y1="144.78" x2="114.3" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="142.24" x2="114.3" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="12V_BARREL" gate="G$1" pin="1"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="63.5" y1="152.4" x2="68.58" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="152.4" x2="68.58" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="215.9" y1="205.74" x2="220.98" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
@@ -22402,6 +22386,7 @@ Portland State University</text>
 <wire x1="347.98" y1="228.6" x2="353.06" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<<<<<<< HEAD
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="104.14" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
@@ -22424,6 +22409,12 @@ Portland State University</text>
 <wire x1="312.42" y1="88.9" x2="314.96" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="314.96" y1="88.9" x2="314.96" y2="83.82" width="0.1524" layer="91"/>
+=======
+<pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="C1" gate="G$1" pin="-"/>
+<wire x1="215.9" y1="203.2" x2="215.9" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="205.74" x2="220.98" y2="205.74" width="0.1524" layer="91"/>
+>>>>>>> 0bdf0269bc66a4152a60a7c105b577ea5a40554f
 </segment>
 </net>
 <net name="12V" class="1">
@@ -22700,7 +22691,7 @@ Portland State University</text>
 <segment>
 <pinref part="ROTARY_ENC" gate="G$1" pin="2"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<wire x1="160.02" y1="172.72" x2="160.02" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="175.26" x2="160.02" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="3V3"/>
@@ -22709,7 +22700,7 @@ Portland State University</text>
 </segment>
 <segment>
 <pinref part="TFT_SCREEN" gate="G$1" pin="15"/>
-<wire x1="355.6" y1="149.86" x2="355.6" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="152.4" x2="355.6" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
