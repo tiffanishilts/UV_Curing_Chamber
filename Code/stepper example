@@ -1,14 +1,19 @@
-int motorPin1 = 8;
-int motorPin2 = 9;
-int motorPin3 = 10;
-int motorPin4 = 11;
+
+int motorPin1 = 26;
+int motorPin2 = 27;
+int motorPin3 = 13;
+int motorPin4 = 14;
+int enablePin = 12;
 int delayTime = 50;
+
 
 void setup() {
   pinMode(motorPin1, OUTPUT);
   pinMode(motorPin2, OUTPUT);
   pinMode(motorPin3, OUTPUT);
   pinMode(motorPin4, OUTPUT);
+
+  digitalWrite(enablePin, HIGH);
 }
 
 void loop() {
