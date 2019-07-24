@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -388,7 +388,7 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 Based on the previous libraries:
 &lt;ul&gt;
 &lt;li&gt;r.lbr
-&lt;li&gt;cap.lbr 
+&lt;li&gt;cap.lbr
 &lt;li&gt;cap-fe.lbr
 &lt;li&gt;captant.lbr
 &lt;li&gt;polcap.lbr
@@ -17259,15 +17259,15 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </library>
 <library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
 <description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
-This library contains electrically-functional connectors. 
+This library contains electrically-functional connectors.
 &lt;br&gt;
 &lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application.
 &lt;br&gt;
 &lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
 &lt;br&gt;
 &lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/
 &lt;br&gt;
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
@@ -17366,7 +17366,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 <package name="1X03_LOCK" urn="urn:adsk.eagle:footprint:37681/1" library_version="1">
 <description>&lt;h3&gt;Plated Through Hole - 3 Pin Locking Footprint&lt;/h3&gt;
-Pins are staggered 0.005" off center to lock pins while soldering. 
+Pins are staggered 0.005" off center to lock pins while soldering.
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
 &lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
@@ -17405,7 +17405,7 @@ Pins are staggered 0.005" off center to lock pins while soldering.
 </package>
 <package name="1X03_LOCK_LONGPADS" urn="urn:adsk.eagle:footprint:37682/1" library_version="1">
 <description>&lt;h3&gt;Plated Through Hole - 3 Pin Long Pad w/ Locking Footprint&lt;/h3&gt;
-Holes are offset 0.005" from center to lock pins in place while soldering. 
+Holes are offset 0.005" from center to lock pins in place while soldering.
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
 &lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
@@ -17436,7 +17436,7 @@ Holes are offset 0.005" from center to lock pins in place while soldering.
 </package>
 <package name="MOLEX-1X3_LOCK" urn="urn:adsk.eagle:footprint:37683/1" library_version="1">
 <description>&lt;h3&gt;PTH - 3 Pin Vertical Molex Polarized Header&lt;/h3&gt;
-Pins are offset 0.005" from center to lock pins in place during soldering. 
+Pins are offset 0.005" from center to lock pins in place during soldering.
 &lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;a href="http://www.4uconnector.com/online/object/4udrawing/01932.pdf"&gt; 4UCONN part # 01932 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
@@ -17465,7 +17465,7 @@ Pins are offset 0.005" from center to lock pins in place during soldering.
 </package>
 <package name="SCREWTERMINAL-3.5MM-3_LOCK.007S" urn="urn:adsk.eagle:footprint:37684/1" library_version="1">
 <description>&lt;h3&gt;Screw Terminal  3.5mm Pitch -3 Pin PTH Locking&lt;/h3&gt;
-Holes are offset 0.007" from center to hold pins in place during soldering. 
+Holes are offset 0.007" from center to hold pins in place during soldering.
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count: 3&lt;/li&gt;
 &lt;li&gt;Pin pitch: 3.5mm/138mil&lt;/li&gt;
@@ -17612,7 +17612,7 @@ Holes are offset 0.007" from center to hold pins in place during soldering.
 </package>
 <package name="1X03_LOCK_NO_SILK" urn="urn:adsk.eagle:footprint:37690/1" library_version="1">
 <description>&lt;h3&gt;Plated Through Hole - 3 Pin Locking Footprint w/out Silk Outline&lt;/h3&gt;
-Holes are offset from center 0.005" to lock pins in place while soldering. 
+Holes are offset from center 0.005" to lock pins in place while soldering.
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
 &lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
@@ -17702,7 +17702,7 @@ Silk outline of pin location
 </package>
 <package name="1X03_SMD_RA_MALE" urn="urn:adsk.eagle:footprint:37694/1" library_version="1">
 <description>&lt;h3&gt;SMD- 3 Pin Right Angle Male Headers&lt;/h3&gt;
-No silk outline, but tDocu layer shows pin location. 
+No silk outline, but tDocu layer shows pin location.
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
 &lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
@@ -18080,7 +18080,7 @@ No silk outline, but tDocu layer shows pin location.
 </package>
 <package name="1X02_LOCK" urn="urn:adsk.eagle:footprint:37661/1" library_version="1">
 <description>&lt;h3&gt;Plated Through Hole - Locking Footprint&lt;/h3&gt;
-Holes are staggered by 0.005" from center to hold pins while soldering. 
+Holes are staggered by 0.005" from center to hold pins while soldering.
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:2&lt;/li&gt;
 &lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
@@ -18111,7 +18111,7 @@ Holes are staggered by 0.005" from center to hold pins while soldering.
 </package>
 <package name="MOLEX-1X2_LOCK" urn="urn:adsk.eagle:footprint:37662/1" library_version="1">
 <description>&lt;h3&gt;Molex 2-Pin Plated Through-Hole Locking Footprint&lt;/h3&gt;
-Holes are offset from center by 0.005" to hold pins in place during soldering. 
+Holes are offset from center by 0.005" to hold pins in place during soldering.
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:2&lt;/li&gt;
 &lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
@@ -18138,7 +18138,7 @@ Holes are offset from center by 0.005" to hold pins in place during soldering.
 </package>
 <package name="1X02_LOCK_LONGPADS" urn="urn:adsk.eagle:footprint:37663/1" library_version="1">
 <description>&lt;h3&gt;Plated Through Hole - Long Pads with Locking Footprint&lt;/h3&gt;
-Pins are staggered by 0.005" from center to hold pins in place while soldering. 
+Pins are staggered by 0.005" from center to hold pins in place while soldering.
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:2&lt;/li&gt;
 &lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
@@ -18166,7 +18166,7 @@ Pins are staggered by 0.005" from center to hold pins in place while soldering.
 </package>
 <package name="SCREWTERMINAL-3.5MM-2_LOCK" urn="urn:adsk.eagle:footprint:37664/1" library_version="1">
 <description>&lt;h3&gt;Screw Terminal  3.5mm Pitch - 2 Pin PTH Locking&lt;/h3&gt;
-Holes are offset from center 0.005" to hold pins in place during soldering. 
+Holes are offset from center 0.005" to hold pins in place during soldering.
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
 &lt;li&gt;Pin pitch: 3.5mm/138mil&lt;/li&gt;
@@ -18228,7 +18228,7 @@ Holes are offset from center 0.005" to hold pins in place during soldering.
 </package>
 <package name="JST-2-PTH" urn="urn:adsk.eagle:footprint:37667/1" library_version="1">
 <description>&lt;h3&gt;JST 2 Pin Right Angle Plated Through  Hole&lt;/h3&gt;
-tDocu indicate polarity for connections that match SparkFun LiPo battery terminations. 
+tDocu indicate polarity for connections that match SparkFun LiPo battery terminations.
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
 &lt;li&gt;Pin pitch:2mm&lt;/li&gt;
@@ -18318,8 +18318,8 @@ tDocu indicate polarity for connections that match SparkFun LiPo battery termina
 </package>
 <package name="JST-2-PTH-NS" urn="urn:adsk.eagle:footprint:37671/1" library_version="1">
 <description>&lt;h3&gt;JST 2 Pin Right Angle Plated Through  Hole- No Silk&lt;/h3&gt;
-tDocu indicate polarity for connections that match SparkFun LiPo battery terminations. 
-&lt;br&gt; No silk outline of connector. 
+tDocu indicate polarity for connections that match SparkFun LiPo battery terminations.
+&lt;br&gt; No silk outline of connector.
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
 &lt;li&gt;Pin pitch:2mm&lt;/li&gt;
@@ -18344,7 +18344,7 @@ tDocu indicate polarity for connections that match SparkFun LiPo battery termina
 </package>
 <package name="JST-2-PTH-KIT" urn="urn:adsk.eagle:footprint:37672/1" library_version="1">
 <description>&lt;h3&gt;JST 2 Pin Right Angle Plated Through  Hole - KIT&lt;/h3&gt;
-tDocu indicate polarity for connections that match SparkFun LiPo battery terminations. 
+tDocu indicate polarity for connections that match SparkFun LiPo battery terminations.
 &lt;br&gt; This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad.
 &lt;br&gt; This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.
 &lt;p&gt;Specifications:
@@ -19452,7 +19452,7 @@ CONN_03
 </package3d>
 <package3d name="MOLEX-1X3" urn="urn:adsk.eagle:package:38064/1" type="box" library_version="1">
 <description>PTH - 3 Pin Vertical Molex Polarized Header
-Datasheet referenced for footprint: 4UCONN part # 01932 
+Datasheet referenced for footprint: 4UCONN part # 01932
 Specifications:
 Pin count:3
 Pin pitch:0.1"
@@ -19480,7 +19480,7 @@ CONN_03
 </package3d>
 <package3d name="1X03_LOCK" urn="urn:adsk.eagle:package:38071/1" type="box" library_version="1">
 <description>Plated Through Hole - 3 Pin Locking Footprint
-Pins are staggered 0.005" off center to lock pins while soldering. 
+Pins are staggered 0.005" off center to lock pins while soldering.
 Specifications:
 Pin count:3
 Pin pitch:0.1"
@@ -19494,7 +19494,7 @@ CONN_03
 </package3d>
 <package3d name="1X03_LOCK_LONGPADS" urn="urn:adsk.eagle:package:38065/1" type="box" library_version="1">
 <description>Plated Through Hole - 3 Pin Long Pad w/ Locking Footprint
-Holes are offset 0.005" from center to lock pins in place while soldering. 
+Holes are offset 0.005" from center to lock pins in place while soldering.
 Specifications:
 Pin count:3
 Pin pitch:0.1"
@@ -19508,8 +19508,8 @@ CONN_03
 </package3d>
 <package3d name="MOLEX-1X3_LOCK" urn="urn:adsk.eagle:package:38067/1" type="box" library_version="1">
 <description>PTH - 3 Pin Vertical Molex Polarized Header
-Pins are offset 0.005" from center to lock pins in place during soldering. 
-Datasheet referenced for footprint: 4UCONN part # 01932 
+Pins are offset 0.005" from center to lock pins in place during soldering.
+Datasheet referenced for footprint: 4UCONN part # 01932
 Specifications:
 Pin count:3
 Pin pitch:0.1"
@@ -19523,7 +19523,7 @@ CONN_03
 </package3d>
 <package3d name="SCREWTERMINAL-3.5MM-3_LOCK.007S" urn="urn:adsk.eagle:package:38066/1" type="box" library_version="1">
 <description>Screw Terminal  3.5mm Pitch -3 Pin PTH Locking
-Holes are offset 0.007" from center to hold pins in place during soldering. 
+Holes are offset 0.007" from center to hold pins in place during soldering.
 Specifications:
 Pin count: 3
 Pin pitch: 3.5mm/138mil
@@ -19604,7 +19604,7 @@ CONN_03
 </package3d>
 <package3d name="1X03_LOCK_NO_SILK" urn="urn:adsk.eagle:package:38074/1" type="box" library_version="1">
 <description>Plated Through Hole - 3 Pin Locking Footprint w/out Silk Outline
-Holes are offset from center 0.005" to lock pins in place while soldering. 
+Holes are offset from center 0.005" to lock pins in place while soldering.
 Specifications:
 Pin count:3
 Pin pitch:0.1"
@@ -19657,7 +19657,7 @@ CONN_03
 </package3d>
 <package3d name="1X03_SMD_RA_MALE" urn="urn:adsk.eagle:package:38078/1" type="box" library_version="1">
 <description>SMD- 3 Pin Right Angle Male Headers
-No silk outline, but tDocu layer shows pin location. 
+No silk outline, but tDocu layer shows pin location.
 Specifications:
 Pin count:3
 Pin pitch:0.1"
@@ -19671,7 +19671,7 @@ CONN_03
 </package3d>
 <package3d name="1X03_SMD_RA_MALE_POST" urn="urn:adsk.eagle:package:38079/1" type="box" library_version="1">
 <description>SMD - 3 Pin Right Angle Male Header w/ Alignment Posts
-Datasheet referenced for footprint: 4UCONN part # 11026 
+Datasheet referenced for footprint: 4UCONN part # 11026
 Specifications:
 Pin count:3
 Pin pitch:0.1"
@@ -19699,7 +19699,7 @@ CONN_03
 </package3d>
 <package3d name="1X03_SMD_RA_MALE_POST_SMALLER" urn="urn:adsk.eagle:package:38082/1" type="box" library_version="1">
 <description>SMD - 3 Pin Right Angle Male Header w/ Alignment Posts
-Datasheet referenced for footprint: 4UCONN part # 11026 
+Datasheet referenced for footprint: 4UCONN part # 11026
 Specifications:
 Pin count:3
 Pin pitch:0.1"
@@ -19816,7 +19816,7 @@ CONN_02
 </packageinstances>
 </package3d>
 <package3d name="JST-2-SMD-VERT" urn="urn:adsk.eagle:package:38052/1" type="box" library_version="1">
-<description>JST-Vertical Male Header SMT 
+<description>JST-Vertical Male Header SMT
 Specifications:
 Pin count: 2
 Pin pitch: 2mm
@@ -19845,7 +19845,7 @@ CONN_02
 </package3d>
 <package3d name="1X02_LOCK" urn="urn:adsk.eagle:package:38045/1" type="box" library_version="1">
 <description>Plated Through Hole - Locking Footprint
-Holes are staggered by 0.005" from center to hold pins while soldering. 
+Holes are staggered by 0.005" from center to hold pins while soldering.
 Specifications:
 Pin count:2
 Pin pitch:0.1"
@@ -19859,7 +19859,7 @@ CONN_02
 </package3d>
 <package3d name="MOLEX-1X2_LOCK" urn="urn:adsk.eagle:package:38046/1" type="box" library_version="1">
 <description>Molex 2-Pin Plated Through-Hole Locking Footprint
-Holes are offset from center by 0.005" to hold pins in place during soldering. 
+Holes are offset from center by 0.005" to hold pins in place during soldering.
 Specifications:
 Pin count:2
 Pin pitch:0.1"
@@ -19874,7 +19874,7 @@ CONN_02
 </package3d>
 <package3d name="1X02_LOCK_LONGPADS" urn="urn:adsk.eagle:package:38047/1" type="box" library_version="1">
 <description>Plated Through Hole - Long Pads with Locking Footprint
-Pins are staggered by 0.005" from center to hold pins in place while soldering. 
+Pins are staggered by 0.005" from center to hold pins in place while soldering.
 Specifications:
 Pin count:2
 Pin pitch:0.1"
@@ -19888,7 +19888,7 @@ CONN_02
 </package3d>
 <package3d name="SCREWTERMINAL-3.5MM-2_LOCK" urn="urn:adsk.eagle:package:38049/1" type="box" library_version="1">
 <description>Screw Terminal  3.5mm Pitch - 2 Pin PTH Locking
-Holes are offset from center 0.005" to hold pins in place during soldering. 
+Holes are offset from center 0.005" to hold pins in place during soldering.
 Specifications:
 Pin count: 2
 Pin pitch: 3.5mm/138mil
@@ -19929,7 +19929,7 @@ CONN_02
 </package3d>
 <package3d name="JST-2-PTH" urn="urn:adsk.eagle:package:38053/1" type="box" library_version="1">
 <description>JST 2 Pin Right Angle Plated Through  Hole
-tDocu indicate polarity for connections that match SparkFun LiPo battery terminations. 
+tDocu indicate polarity for connections that match SparkFun LiPo battery terminations.
 Specifications:
 Pin count: 2
 Pin pitch:2mm
@@ -19984,8 +19984,8 @@ CONN_02
 </package3d>
 <package3d name="JST-2-PTH-NS" urn="urn:adsk.eagle:package:38056/1" type="box" library_version="1">
 <description>JST 2 Pin Right Angle Plated Through  Hole- No Silk
-tDocu indicate polarity for connections that match SparkFun LiPo battery terminations. 
- No silk outline of connector. 
+tDocu indicate polarity for connections that match SparkFun LiPo battery terminations.
+ No silk outline of connector.
 Specifications:
 Pin count: 2
 Pin pitch:2mm
@@ -20000,7 +20000,7 @@ CONN_02
 </package3d>
 <package3d name="JST-2-PTH-KIT" urn="urn:adsk.eagle:package:38057/1" type="box" library_version="1">
 <description>JST 2 Pin Right Angle Plated Through  Hole - KIT
-tDocu indicate polarity for connections that match SparkFun LiPo battery terminations. 
+tDocu indicate polarity for connections that match SparkFun LiPo battery terminations.
  This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad.
  This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.
 Specifications:
@@ -22386,7 +22386,6 @@ Portland State University</text>
 <wire x1="347.98" y1="228.6" x2="353.06" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<<<<<<< HEAD
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="104.14" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
@@ -22409,12 +22408,6 @@ Portland State University</text>
 <wire x1="312.42" y1="88.9" x2="314.96" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="314.96" y1="88.9" x2="314.96" y2="83.82" width="0.1524" layer="91"/>
-=======
-<pinref part="GND9" gate="1" pin="GND"/>
-<pinref part="C1" gate="G$1" pin="-"/>
-<wire x1="215.9" y1="203.2" x2="215.9" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="205.74" x2="220.98" y2="205.74" width="0.1524" layer="91"/>
->>>>>>> 0bdf0269bc66a4152a60a7c105b577ea5a40554f
 </segment>
 </net>
 <net name="12V" class="1">
