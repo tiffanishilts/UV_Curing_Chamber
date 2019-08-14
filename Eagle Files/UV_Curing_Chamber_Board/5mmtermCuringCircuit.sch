@@ -22002,6 +22002,40 @@ W = angled&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="supply2" urn="urn:adsk.eagle:library:372">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+Please keep in mind, that these devices are necessary for the
+automatic wiring of the supply signals.&lt;p&gt;
+The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="V+" urn="urn:adsk.eagle:symbol:27026/1" library_version="2">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-1.27" y="1.27" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="V+" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="V+" urn="urn:adsk.eagle:component:27074/1" prefix="SUPPLY" library_version="2">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="V+" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -22058,7 +22092,6 @@ W = angled&lt;p&gt;
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="075-063X106" package3d_urn="urn:adsk.eagle:package:23678/1" value=".1uF"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_B_L" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -22078,6 +22111,8 @@ W = angled&lt;p&gt;
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="12V" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device="" value="+12V"/>
+<part name="12V1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device="" value="+12V"/>
 </parts>
 <sheets>
 <sheet>
@@ -22238,9 +22273,6 @@ Portland State University</text>
 <instance part="P+2" gate="1" x="236.22" y="215.9" smashed="yes">
 <attribute name="VALUE" x="233.68" y="210.82" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+3" gate="1" x="160.02" y="119.38" smashed="yes">
-<attribute name="VALUE" x="157.48" y="114.3" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
 <instance part="FRAME1" gate="G$2" x="322.58" y="5.08" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="335.28" y="6.35" size="2.54" layer="94"/>
@@ -22304,6 +22336,12 @@ Portland State University</text>
 </instance>
 <instance part="GND20" gate="1" x="226.06" y="73.66" smashed="yes">
 <attribute name="VALUE" x="223.52" y="71.12" size="1.778" layer="96"/>
+</instance>
+<instance part="12V" gate="1" x="88.9" y="165.1" smashed="yes">
+<attribute name="VALUE" x="86.614" y="159.512" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="12V1" gate="1" x="160.02" y="119.38" smashed="yes">
+<attribute name="VALUE" x="157.734" y="113.792" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -22443,17 +22481,6 @@ Portland State University</text>
 <wire x1="215.9" y1="203.2" x2="215.9" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="215.9" y1="205.74" x2="220.98" y2="205.74" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="12V" class="1">
-<segment>
-<pinref part="IC1" gate="A1" pin="VI"/>
-<wire x1="78.74" y1="157.48" x2="88.9" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="POWER_SWITCH" gate="G$1" pin="2"/>
-<pinref part="C2" gate="G$1" pin="+"/>
-<wire x1="88.9" y1="157.48" x2="91.44" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="154.94" x2="88.9" y2="157.48" width="0.1524" layer="91"/>
-<junction x="88.9" y="157.48"/>
 </segment>
 </net>
 <net name="N$3" class="1">
@@ -22661,10 +22688,8 @@ Portland State University</text>
 <pinref part="IC2" gate="G$1" pin="3-4EN"/>
 <pinref part="U$1" gate="G$1" pin="IO12"/>
 <wire x1="218.44" y1="167.64" x2="223.52" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="167.64" x2="218.44" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="121.92" x2="218.44" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="167.64" x2="218.44" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="114.3" x2="218.44" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="114.3" x2="218.44" y2="119.38" width="0.1524" layer="91"/>
 <junction x="246.38" y="114.3"/>
 </segment>
 </net>
@@ -22688,12 +22713,6 @@ Portland State University</text>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="114.3" y1="157.48" x2="114.3" y2="162.56" width="0.1524" layer="91"/>
 <junction x="114.3" y="157.48"/>
-</segment>
-<segment>
-<wire x1="160.02" y1="109.22" x2="154.94" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="RELAY_B" gate="G$1" pin="2"/>
-<pinref part="P+3" gate="1" pin="+5V"/>
-<wire x1="160.02" y1="109.22" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+7" gate="1" pin="+5V"/>
@@ -22821,6 +22840,25 @@ Portland State University</text>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="297.18" y1="104.14" x2="304.8" y2="104.14" width="0.1524" layer="91"/>
 <junction x="297.18" y="104.14"/>
+</segment>
+</net>
+<net name="V+" class="1">
+<segment>
+<pinref part="IC1" gate="A1" pin="VI"/>
+<wire x1="78.74" y1="157.48" x2="88.9" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="POWER_SWITCH" gate="G$1" pin="2"/>
+<pinref part="C2" gate="G$1" pin="+"/>
+<wire x1="88.9" y1="157.48" x2="91.44" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="154.94" x2="88.9" y2="157.48" width="0.1524" layer="91"/>
+<junction x="88.9" y="157.48"/>
+<pinref part="12V" gate="1" pin="V+"/>
+<wire x1="88.9" y1="157.48" x2="88.9" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="160.02" y1="109.22" x2="154.94" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="RELAY_B" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="109.22" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="12V1" gate="1" pin="V+"/>
 </segment>
 </net>
 </nets>
