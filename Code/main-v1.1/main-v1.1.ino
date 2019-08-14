@@ -95,7 +95,7 @@ float             tempUpper= 0;
 float             currentTemp = 0; // in C current temperature
 
 // Resin Values [temperature in C, time in minutes]
-int clrResin[2] = {60, 30};
+int regResin[2] = {60, 30};
 int colorResin[2] = {60, 30};
 int gpResin[2] = {80, 15};
 int rigidResin [2] = {80, 15};
@@ -132,7 +132,7 @@ void setup() {
   Serial.begin(9600);
 
   // Initialize the Temperature Sensor
-  if (!tempsensor.begin())
+  if (!tempsensor.begin(0x18))
     {
     Serial.println("Couldn't find MCP9808!");
     while (1);
@@ -258,7 +258,8 @@ void cureProcedure() {
     Serial.println("\nCuring has completed.");
     cureComplete = 1;
     digitalWrite(RELAY, 0);
-    ledcWrite(PWM_CHANNEL, 0);
+//    ledcWrite(PWM_CHANNEL, 0);
+    digitalWrite(ME, 0);
     cureState = 0;
   }
 
