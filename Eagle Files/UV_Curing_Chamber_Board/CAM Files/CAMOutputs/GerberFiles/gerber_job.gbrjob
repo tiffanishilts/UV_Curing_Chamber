@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-08-21T01:02:30Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.4.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.5342,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "5mmtermCuringCircuit"
+        },
+        "Owner": "Chuck Faber <kpfaber@gmail.com>",
+        "Size": {
+            "X": 143.15,
+            "Y": 87.5
+        }
+    }
+}

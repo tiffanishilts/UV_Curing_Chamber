@@ -2462,7 +2462,7 @@ W = angled&lt;p&gt;
 <contactref element="R2" pad="1"/>
 <wire x1="84.45" y1="68.18" x2="78.42" y2="74.21" width="0.7" layer="16"/>
 <wire x1="132.14" y1="5.96" x2="128.45" y2="9.65" width="0.7" layer="16"/>
-<via x="128.45" y="9.65" extent="1-16" drill="1.5" diameter="0.3"/>
+<via x="128.45" y="9.65" extent="1-16" drill="0.3" diameter="0.3"/>
 <wire x1="128.45" y1="9.65" x2="124.6" y2="9.65" width="0.7" layer="1"/>
 <wire x1="102.05" y1="36.05" x2="101.1" y2="37" width="0.7" layer="1"/>
 <wire x1="102.05" y1="36.05" x2="102.05" y2="32.2" width="0.7" layer="1"/>
@@ -2862,14 +2862,6 @@ W = angled&lt;p&gt;
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
-<errors>
-<approved hash="23,16,930d35b0d4f9822f"/>
-<approved hash="23,16,df584748460fde1f"/>
-<approved hash="23,16,06d807bb4a69cde2"/>
-<approved hash="23,16,d89ba885d6378969"/>
-<approved hash="23,16,824e5d774aa17e6f"/>
-<approved hash="23,1,2deccc33ee301581"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
