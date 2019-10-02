@@ -212,6 +212,21 @@
 <text x="78.85" y="76.75" size="1.27" layer="21" rot="R90">CLK</text>
 <text x="29.2" y="12.5" size="1.27" layer="21">LIGHTS</text>
 <text x="38.9" y="12.7" size="1.27" layer="21">12V BARREL</text>
+<text x="123.9" y="14.05" size="1.27" layer="21" rot="R90">220</text>
+<text x="90.65" y="15.7" size="1.27" layer="21">220</text>
+<text x="79.15" y="17.55" size="1.27" layer="21">0.1u</text>
+<text x="45.75" y="29.7" size="1.27" layer="21" rot="R90">10k</text>
+<text x="53.95" y="51.9" size="1.27" layer="21">0.1u</text>
+<text x="32.5" y="25.85" size="1.27" layer="21" rot="R90">10u</text>
+<text x="27.65" y="26.1" size="1.27" layer="21" rot="R90">10u</text>
+<text x="33.05" y="33.9" size="1.27" layer="21">0.1u</text>
+<text x="21.9" y="54.9" size="1.27" layer="21">0.1u</text>
+<text x="37.25" y="70.5" size="1.27" layer="21">0.1u</text>
+<text x="74.3" y="69.9" size="1.27" layer="21">10k</text>
+<text x="32.6" y="14.35" size="1.27" layer="21">12V</text>
+<text x="20.8" y="9.15" size="1.778" layer="21" rot="R90">12V</text>
+<text x="15.45" y="8.95" size="1.778" layer="21" rot="R90">GND</text>
+<text x="14.05" y="34.05" size="1.778" layer="21" rot="R90">GND</text>
 </plain>
 <libraries>
 <library name="con-jack" urn="urn:adsk.eagle:library:154">
@@ -2477,11 +2492,11 @@ W = angled&lt;p&gt;
 <signal name="N$3" class="1">
 <contactref element="12V_BARREL" pad="3"/>
 <contactref element="POWER_SWITCH" pad="1"/>
-<wire x1="50.165" y1="11.43" x2="57.785" y2="3.81" width="2.54" layer="16"/>
-<wire x1="45.085" y1="11.43" x2="50.165" y2="11.43" width="2.54" layer="16"/>
-<wire x1="43.815" y1="10.16" x2="45.085" y2="11.43" width="2.54" layer="16"/>
+<wire x1="50.165" y1="11.43" x2="57.785" y2="3.81" width="2.794" layer="16"/>
+<wire x1="45.085" y1="11.43" x2="50.165" y2="11.43" width="2.794" layer="16"/>
+<wire x1="43.815" y1="10.16" x2="45.085" y2="11.43" width="2.794" layer="16"/>
 <wire x1="57.785" y1="3.81" x2="58.03" y2="3.81" width="2.54" layer="16"/>
-<wire x1="43.815" y1="10.16" x2="43.298" y2="10.239" width="2.54" layer="16"/>
+<wire x1="43.815" y1="10.16" x2="43.298" y2="10.239" width="2.794" layer="16"/>
 </signal>
 <signal name="N$4">
 <contactref element="HEATER" pad="1"/>
@@ -2656,12 +2671,9 @@ W = angled&lt;p&gt;
 <via x="79.7" y="39.45" extent="1-16" drill="1.016"/>
 <wire x1="79.7" y1="39.45" x2="89.2498" y2="29.9002" width="0.508" layer="1"/>
 <wire x1="89.2498" y1="29.9002" x2="89.2498" y2="22.207175" width="0.508" layer="1"/>
-<wire x1="89.2498" y1="22.207175" x2="92.406975" y2="19.05" width="0.508" layer="1"/>
-<wire x1="92.406975" y1="19.05" x2="114.2" y2="19.05" width="0.508" layer="1"/>
-<wire x1="114.2" y1="19.05" x2="114.5" y2="19.35" width="0.508" layer="1"/>
-<via x="114.5" y="19.35" extent="1-16" drill="1.016"/>
-<wire x1="114.5" y1="19.35" x2="119.06" y2="19.35" width="0.508" layer="16"/>
-<wire x1="119.06" y1="19.35" x2="119.44" y2="18.97" width="0.508" layer="16"/>
+<wire x1="89.2498" y1="22.207175" x2="92.106975" y2="19.35" width="0.508" layer="1"/>
+<wire x1="92.106975" y1="19.35" x2="119.06" y2="19.35" width="0.508" layer="1"/>
+<wire x1="119.06" y1="19.35" x2="119.44" y2="18.97" width="0.508" layer="1"/>
 </signal>
 <signal name="N$29">
 <contactref element="IC2" pad="10"/>
@@ -2920,9 +2932,9 @@ W = angled&lt;p&gt;
 <contactref element="POWER_SWITCH" pad="2"/>
 <contactref element="C2" pad="+"/>
 <contactref element="RELAY_B" pad="2"/>
-<wire x1="56.28" y1="0.87" x2="53.34" y2="3.81" width="2.54" layer="16"/>
-<wire x1="72.625" y1="0.87" x2="56.28" y2="0.87" width="2.54" layer="16"/>
-<wire x1="75.565" y1="3.81" x2="72.625" y2="0.87" width="2.54" layer="16"/>
+<wire x1="56.42" y1="0.73" x2="53.34" y2="3.81" width="2.54" layer="16"/>
+<wire x1="72.485" y1="0.73" x2="56.42" y2="0.73" width="2.54" layer="16"/>
+<wire x1="75.565" y1="3.81" x2="72.485" y2="0.73" width="2.54" layer="16"/>
 <wire x1="53.34" y1="3.81" x2="53.03" y2="3.81" width="1.27" layer="16"/>
 <wire x1="75.565" y1="3.81" x2="75.89" y2="3.81" width="2.54" layer="16"/>
 <wire x1="24.765" y1="22.86" x2="31.115" y2="22.86" width="1.27" layer="16"/>
@@ -2970,9 +2982,6 @@ W = angled&lt;p&gt;
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
-<errors>
-<approved hash="1,20,b6ec4814761988e1"/>
-</errors>
 </board>
 </drawing>
 <compatibility>

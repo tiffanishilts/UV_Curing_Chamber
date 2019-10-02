@@ -2492,11 +2492,11 @@ W = angled&lt;p&gt;
 <signal name="N$3" class="1">
 <contactref element="12V_BARREL" pad="3"/>
 <contactref element="POWER_SWITCH" pad="1"/>
-<wire x1="50.165" y1="11.43" x2="57.785" y2="3.81" width="2.54" layer="16"/>
-<wire x1="45.085" y1="11.43" x2="50.165" y2="11.43" width="2.54" layer="16"/>
-<wire x1="43.815" y1="10.16" x2="45.085" y2="11.43" width="2.54" layer="16"/>
+<wire x1="50.165" y1="11.43" x2="57.785" y2="3.81" width="2.794" layer="16"/>
+<wire x1="45.085" y1="11.43" x2="50.165" y2="11.43" width="2.794" layer="16"/>
+<wire x1="43.815" y1="10.16" x2="45.085" y2="11.43" width="2.794" layer="16"/>
 <wire x1="57.785" y1="3.81" x2="58.03" y2="3.81" width="2.54" layer="16"/>
-<wire x1="43.815" y1="10.16" x2="43.298" y2="10.239" width="2.54" layer="16"/>
+<wire x1="43.815" y1="10.16" x2="43.298" y2="10.239" width="2.794" layer="16"/>
 </signal>
 <signal name="N$4">
 <contactref element="HEATER" pad="1"/>
@@ -2932,9 +2932,9 @@ W = angled&lt;p&gt;
 <contactref element="POWER_SWITCH" pad="2"/>
 <contactref element="C2" pad="+"/>
 <contactref element="RELAY_B" pad="2"/>
-<wire x1="56.28" y1="0.87" x2="53.34" y2="3.81" width="2.54" layer="16"/>
-<wire x1="72.625" y1="0.87" x2="56.28" y2="0.87" width="2.54" layer="16"/>
-<wire x1="75.565" y1="3.81" x2="72.625" y2="0.87" width="2.54" layer="16"/>
+<wire x1="56.42" y1="0.73" x2="53.34" y2="3.81" width="2.54" layer="16"/>
+<wire x1="72.485" y1="0.73" x2="56.42" y2="0.73" width="2.54" layer="16"/>
+<wire x1="75.565" y1="3.81" x2="72.485" y2="0.73" width="2.54" layer="16"/>
 <wire x1="53.34" y1="3.81" x2="53.03" y2="3.81" width="1.27" layer="16"/>
 <wire x1="75.565" y1="3.81" x2="75.89" y2="3.81" width="2.54" layer="16"/>
 <wire x1="24.765" y1="22.86" x2="31.115" y2="22.86" width="1.27" layer="16"/>
@@ -2966,9 +2966,9 @@ W = angled&lt;p&gt;
 <wire x1="31.75" y1="10.16" x2="26.67" y2="10.16" width="2.54" layer="16"/>
 <wire x1="31.75" y1="10.16" x2="32.249" y2="10.239" width="1.27" layer="16"/>
 <wire x1="50.8" y1="17.145" x2="64.135" y2="3.81" width="2.54" layer="16"/>
-<wire x1="45.72" y1="17.145" x2="50.8" y2="17.145" width="2.54" layer="16"/>
-<wire x1="26.955" y1="35.91" x2="45.72" y2="17.145" width="2.54" layer="16"/>
-<wire x1="9.875" y1="35.91" x2="26.955" y2="35.91" width="2.54" layer="16"/>
+<wire x1="45.77" y1="17.145" x2="50.8" y2="17.145" width="2.54" layer="16"/>
+<wire x1="27.005" y1="35.91" x2="45.77" y2="17.145" width="2.54" layer="16"/>
+<wire x1="9.875" y1="35.91" x2="27.005" y2="35.91" width="2.54" layer="16"/>
 <wire x1="7.62" y1="33.655" x2="9.875" y2="35.91" width="2.54" layer="16"/>
 <wire x1="7.62" y1="28.575" x2="7.62" y2="33.655" width="2.54" layer="16"/>
 <wire x1="26.3525" y1="9.8425" x2="7.62" y2="28.575" width="2.54" layer="16"/>
@@ -2982,9 +2982,6 @@ W = angled&lt;p&gt;
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
-<errors>
-<approved hash="1,20,b6ec4814761988e1"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
