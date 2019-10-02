@@ -212,21 +212,6 @@
 <text x="78.85" y="76.75" size="1.27" layer="21" rot="R90">CLK</text>
 <text x="29.2" y="12.5" size="1.27" layer="21">LIGHTS</text>
 <text x="38.9" y="12.7" size="1.27" layer="21">12V BARREL</text>
-<text x="123.9" y="14.05" size="1.27" layer="21" rot="R90">220</text>
-<text x="90.65" y="15.7" size="1.27" layer="21">220</text>
-<text x="79.15" y="17.55" size="1.27" layer="21">0.1u</text>
-<text x="45.75" y="29.7" size="1.27" layer="21" rot="R90">10k</text>
-<text x="53.95" y="51.9" size="1.27" layer="21">0.1u</text>
-<text x="32.5" y="25.85" size="1.27" layer="21" rot="R90">10u</text>
-<text x="27.65" y="26.1" size="1.27" layer="21" rot="R90">10u</text>
-<text x="33.05" y="33.9" size="1.27" layer="21">0.1u</text>
-<text x="21.9" y="54.9" size="1.27" layer="21">0.1u</text>
-<text x="37.25" y="70.5" size="1.27" layer="21">0.1u</text>
-<text x="74.3" y="69.9" size="1.27" layer="21">10k</text>
-<text x="32.6" y="14.35" size="1.27" layer="21">12V</text>
-<text x="20.8" y="9.15" size="1.778" layer="21" rot="R90">12V</text>
-<text x="15.45" y="8.95" size="1.778" layer="21" rot="R90">GND</text>
-<text x="14.05" y="34.05" size="1.778" layer="21" rot="R90">GND</text>
 </plain>
 <libraries>
 <library name="con-jack" urn="urn:adsk.eagle:library:154">
@@ -2671,9 +2656,12 @@ W = angled&lt;p&gt;
 <via x="79.7" y="39.45" extent="1-16" drill="1.016"/>
 <wire x1="79.7" y1="39.45" x2="89.2498" y2="29.9002" width="0.508" layer="1"/>
 <wire x1="89.2498" y1="29.9002" x2="89.2498" y2="22.207175" width="0.508" layer="1"/>
-<wire x1="89.2498" y1="22.207175" x2="92.106975" y2="19.35" width="0.508" layer="1"/>
-<wire x1="92.106975" y1="19.35" x2="119.06" y2="19.35" width="0.508" layer="1"/>
-<wire x1="119.06" y1="19.35" x2="119.44" y2="18.97" width="0.508" layer="1"/>
+<wire x1="89.2498" y1="22.207175" x2="92.406975" y2="19.05" width="0.508" layer="1"/>
+<wire x1="92.406975" y1="19.05" x2="114.2" y2="19.05" width="0.508" layer="1"/>
+<wire x1="114.2" y1="19.05" x2="114.5" y2="19.35" width="0.508" layer="1"/>
+<via x="114.5" y="19.35" extent="1-16" drill="1.016"/>
+<wire x1="114.5" y1="19.35" x2="119.06" y2="19.35" width="0.508" layer="16"/>
+<wire x1="119.06" y1="19.35" x2="119.44" y2="18.97" width="0.508" layer="16"/>
 </signal>
 <signal name="N$29">
 <contactref element="IC2" pad="10"/>
