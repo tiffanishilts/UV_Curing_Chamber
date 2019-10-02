@@ -2600,12 +2600,32 @@ W = angled&lt;p&gt;
 <signal name="N$26">
 <contactref element="U$1" pad="9"/>
 <contactref element="R3" pad="1"/>
-<wire x1="68.2" y1="48.27" x2="119.44" y2="18.97" width="0" layer="19" extent="1-1"/>
+<wire x1="68.2" y1="48.27" x2="76.82" y2="39.65" width="0.508" layer="16"/>
+<wire x1="76.82" y1="39.65" x2="79.5" y2="39.65" width="0.508" layer="16"/>
+<wire x1="79.5" y1="39.65" x2="79.7" y2="39.45" width="0.508" layer="16"/>
+<via x="79.7" y="39.45" extent="1-16" drill="1.016"/>
+<wire x1="79.7" y1="39.45" x2="89.2498" y2="29.9002" width="0.508" layer="1"/>
+<wire x1="89.2498" y1="29.9002" x2="89.2498" y2="22.207175" width="0.508" layer="1"/>
+<wire x1="89.2498" y1="22.207175" x2="92.406975" y2="19.05" width="0.508" layer="1"/>
+<wire x1="92.406975" y1="19.05" x2="114.2" y2="19.05" width="0.508" layer="1"/>
+<wire x1="114.2" y1="19.05" x2="114.5" y2="19.35" width="0.508" layer="1"/>
+<via x="114.5" y="19.35" extent="1-16" drill="1.016"/>
+<wire x1="114.5" y1="19.35" x2="119.06" y2="19.35" width="0.508" layer="16"/>
+<wire x1="119.06" y1="19.35" x2="119.44" y2="18.97" width="0.508" layer="16"/>
 </signal>
 <signal name="N$29">
 <contactref element="IC2" pad="10"/>
 <contactref element="U$1" pad="15"/>
-<wire x1="38.98" y1="51.65" x2="68.2" y2="33.03" width="0" layer="19" extent="1-1"/>
+<wire x1="38.98" y1="51.65" x2="37.8" y2="52.83" width="0.508" layer="16"/>
+<wire x1="37.8" y1="52.83" x2="37.8" y2="56.15" width="0.508" layer="16"/>
+<via x="37.8" y="56.15" extent="1-16" drill="1.016"/>
+<wire x1="60.097" y1="40.553" x2="63.6" y2="37.05" width="0.508" layer="1"/>
+<wire x1="60.097" y1="42.4286625" x2="60.097" y2="40.553" width="0.508" layer="1"/>
+<wire x1="46.3756625" y1="56.15" x2="60.097" y2="42.4286625" width="0.508" layer="1"/>
+<wire x1="37.8" y1="56.15" x2="46.3756625" y2="56.15" width="0.508" layer="1"/>
+<via x="63.6" y="37.05" extent="1-16" drill="1.016"/>
+<wire x1="63.6" y1="37.05" x2="67.62" y2="33.03" width="0.508" layer="16"/>
+<wire x1="67.62" y1="33.03" x2="68.2" y2="33.03" width="0.508" layer="16"/>
 </signal>
 <signal name="N$5">
 <contactref element="IC2" pad="7"/>
@@ -2632,12 +2652,37 @@ W = angled&lt;p&gt;
 <signal name="N$13">
 <contactref element="U$1" pad="10"/>
 <contactref element="IC2" pad="2"/>
-<wire x1="26.28" y1="44.03" x2="68.2" y2="45.73" width="0" layer="19" extent="1-1"/>
+<wire x1="26.28" y1="44.03" x2="27.4" y2="42.91" width="0.508" layer="16"/>
+<wire x1="27.4" y1="42.91" x2="27.4" y2="42.1" width="0.508" layer="16"/>
+<wire x1="68.2" y1="45.73" x2="66.62" y2="44.15" width="0.508" layer="16"/>
+<wire x1="60.8" y1="44.15" x2="58.7" y2="42.05" width="0.508" layer="16"/>
+<wire x1="58.7" y1="42.05" x2="58.7" y2="41.85" width="0.508" layer="16"/>
+<wire x1="58.7" y1="41.85" x2="58.75" y2="41.8" width="0.508" layer="1"/>
+<wire x1="66.62" y1="44.15" x2="60.8" y2="44.15" width="0.508" layer="16"/>
+<via x="58.7" y="41.85" extent="1-16" drill="1.016"/>
+<wire x1="27.4" y1="42.1" x2="27.9" y2="42.1" width="0.508" layer="1"/>
+<via x="27.4" y="42.1" extent="1-16" drill="1.016"/>
+<wire x1="27.4" y1="42.1" x2="58.45" y2="42.1" width="0.508" layer="1"/>
+<wire x1="58.45" y1="42.1" x2="58.7" y2="41.85" width="0.508" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="U$1" pad="12"/>
 <contactref element="IC2" pad="15"/>
-<wire x1="26.28" y1="51.65" x2="68.2" y2="40.65" width="0" layer="19" extent="1-1"/>
+<wire x1="26.28" y1="51.65" x2="26.28" y2="56.97" width="0.508" layer="16"/>
+<wire x1="24.45" y1="58.8" x2="24.45" y2="65.45" width="0.508" layer="16"/>
+<wire x1="26.28" y1="56.97" x2="24.45" y2="58.8" width="0.508" layer="16"/>
+<wire x1="68.2" y1="40.65" x2="67" y2="41.85" width="0.508" layer="16"/>
+<wire x1="24.45" y1="65.45" x2="26.05" y2="67.05" width="0.508" layer="16"/>
+<wire x1="26.05" y1="67.05" x2="26.5" y2="67.05" width="0.508" layer="1"/>
+<via x="26.05" y="67.05" extent="1-16" drill="1.016"/>
+<wire x1="26.05" y1="67.05" x2="33.48210625" y2="67.05" width="0.508" layer="1"/>
+<wire x1="33.48210625" y1="67.05" x2="34.56290625" y2="68.1308" width="0.508" layer="1"/>
+<wire x1="34.56290625" y1="68.1308" x2="44.3192" y2="68.1308" width="0.508" layer="1"/>
+<wire x1="57.1" y1="55.35" x2="57.1" y2="47.95" width="0.508" layer="1"/>
+<wire x1="57.1" y1="47.95" x2="63.2" y2="41.85" width="0.508" layer="1"/>
+<wire x1="44.3192" y1="68.1308" x2="57.1" y2="55.35" width="0.508" layer="1"/>
+<via x="63.2" y="41.85" extent="1-16" drill="1.016"/>
+<wire x1="67" y1="41.85" x2="63.2" y2="41.85" width="0.508" layer="16"/>
 </signal>
 <signal name="+5V">
 <contactref element="C3" pad="+"/>
@@ -2736,7 +2781,16 @@ W = angled&lt;p&gt;
 <signal name="N$1">
 <contactref element="TFT_SCREEN" pad="9"/>
 <contactref element="U$1" pad="37"/>
-<wire x1="90.85" y1="66.05" x2="135.5" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="90.85" y1="66.05" x2="98.35" y2="73.55" width="0.508" layer="16"/>
+<wire x1="98.95" y1="73.55" x2="99.05" y2="73.65" width="0.508" layer="1"/>
+<wire x1="98.35" y1="73.55" x2="98.95" y2="73.55" width="0.508" layer="16"/>
+<via x="98.95" y="73.55" extent="1-16" drill="1.016"/>
+<wire x1="98.95" y1="73.55" x2="115.4" y2="57.1" width="0.508" layer="1"/>
+<wire x1="115.4" y1="57.1" x2="115.4" y2="40.6" width="0.508" layer="1"/>
+<wire x1="115.4" y1="40.6" x2="116" y2="40.6" width="0.508" layer="16"/>
+<via x="115.4" y="40.6" extent="1-16" drill="1.016"/>
+<wire x1="115.4" y1="40.6" x2="135.46" y2="40.6" width="0.508" layer="16"/>
+<wire x1="135.46" y1="40.6" x2="135.5" y2="40.64" width="0.508" layer="16"/>
 </signal>
 <signal name="N$14">
 <contactref element="R5" pad="2"/>
