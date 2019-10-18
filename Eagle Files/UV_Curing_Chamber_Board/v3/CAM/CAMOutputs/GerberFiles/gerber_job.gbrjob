@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-10-02T21:09:24Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.4.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.5342,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "newbottomboard"
+        },
+        "Owner": "Chuck Faber <kpfaber@gmail.com>",
+        "Size": {
+            "X": 143.3,
+            "Y": 88.45
+        }
+    }
+}
